@@ -1,0 +1,35 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ding.library" >
+
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application>
+
+        <provider
+            android:authorities="com.ding.library"
+            android:name=".internal.utils.CaptureContext"/>
+
+        <activity
+            android:name="com.ding.library.internal.ui.CaptureInfoActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|smallestScreenSize|locale"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity-alias
+            android:label="抓包入口"
+            android:name="CaptureInfoActivity"
+            android:targetActivity="com.ding.library.internal.ui.CaptureInfoActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+
+    </application>
+
+
+</manifest>
