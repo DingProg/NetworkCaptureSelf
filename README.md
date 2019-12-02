@@ -34,6 +34,13 @@ dependencies {
 }
 ```
 
+在你的全局OkHttp中添加 Interceptor
+```java
+new OkHttpClient.Builder()
+        .addInterceptor(new CaptureInfoInterceptor())
+        .build();
+```
+
 # 注意事项
 注意接入时  debugImplementation 和 releaseImplementation区别，releaseImplementation中不包含任何其他代码
 
