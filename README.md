@@ -44,3 +44,6 @@ new OkHttpClient.Builder()
 
 如果您的项目中还有buildType 是develop，那么developImplementation
 请依赖 'com.github.DingProg.NetworkCaptureSelf:library:v1.0.1'
+
+# More
+关于更多，请查看 [Blog](https://blog.csdn.net/dingdegao/article/details/103351590)
