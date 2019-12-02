@@ -3,9 +3,7 @@
 
 # 工具界面截图
 ![](https://github.com/DingProg/NetworkCaptureSelf/blob/master/screen/lanuch.png)
-![](https://github.com/DingProg/NetworkCaptureSelf/blob/master/screen/main1.png)
-![](https://github.com/DingProg/NetworkCaptureSelf/blob/master/screen/main2.png)
-![](https://github.com/DingProg/NetworkCaptureSelf/blob/master/screen/main3.png)
+![](https://github.com/DingProg/NetworkCaptureSelf/blob/master/screen/main.png)
 
 
 # 支持功能
