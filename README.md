@@ -33,3 +33,7 @@ dependencies {
     releaseImplementation 'com.github.DingProg.NetworkCaptureSelf:library_no_op:v1.0.1'
 }
 ```
+
+# 注意事项
+注意接入时  debugImplementation 和 releaseImplementation区别，releaseImplementation中不包含任何其他代码
+如果您的项目中还有buildType 是develop，那么developImplementation 请依赖 'com.github.DingProg.NetworkCaptureSelf:library:v1.0.1'
