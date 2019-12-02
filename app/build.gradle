@@ -28,6 +28,8 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
     implementation 'com.squareup.okhttp3:okhttp:3.7.0'
-    debugImplementation project(':library')
-    releaseImplementation project(':library_no_op')
+    debugImplementation 'com.github.DingProg.NetworkCaptureSelf:library:v1.0.1'
+    releaseImplementation 'com.github.DingProg.NetworkCaptureSelf:library_no_op:v1.0.1'
+//    debugImplementation project(':library')
+//    releaseImplementation project(':library_no_op')
 }
