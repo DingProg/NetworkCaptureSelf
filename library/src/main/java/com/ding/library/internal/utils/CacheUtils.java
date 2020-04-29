@@ -6,6 +6,8 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 
+import androidx.core.content.ContextCompat;
+
 import com.alibaba.fastjson.JSON;
 import com.ding.library.internal.CaptureEntity;
 import com.ding.library.internal.DiskIOThreadExecutor;
@@ -37,7 +39,7 @@ public class CacheUtils {
 
     private CacheUtils() {
         File file;
-        if (FileUtil.sdcardAvailable() && CaptureContext.appContext.checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE)
+        if (FileUtil.sdcardAvailable() && ContextCompat.checkSelfPermission(CaptureContext.appContext,Manifest.permission.WRITE_EXTERNAL_STORAGE)
                 == PackageManager.PERMISSION_GRANTED) {
             file = new File(CaptureContext.appContext.getExternalCacheDir(), "capture");
         } else {
